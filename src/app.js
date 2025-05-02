@@ -13,7 +13,11 @@ app.use(marketRoutes)
 
 app.use((req,res,next)=>{
     res.status(404).json({
-        message:'Endpoint No encontrado'
+        message: "Favor realizar pruebas en los siguientes endpoints:",
+     endpoints: [
+     "https://URL GENERADA Railway /usuarios",
+     "https:// URL GENERADA Railway /productos"
+     ]
     })
 })
 
